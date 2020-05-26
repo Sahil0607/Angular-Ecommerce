@@ -1,0 +1,9 @@
+#catname{
+    margin:0px 15px;
+    color:white;
+    cursor: pointer;
+}
+#catname:hover{
+    color: grey;
+    transition: 1s;
+}

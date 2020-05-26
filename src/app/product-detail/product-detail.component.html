@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <p class="pcategory">{{currentProduct.category}}</p>
+  <div class="row"> 
+    <div class="col-sm-5 images">
+      <span *ngFor="let image of currentProduct.picture; let i = index" [attr.data-index]="i">
+        <img *ngIf="defaultColor === i" src="{{image}}" > 
+      </span>
+    </div>
+
+    <div class="col-sm-5 content">
+      <p class="pcompany">{{currentProduct.company}}</p>
+      <h3 class="pname">{{currentProduct.name}}</h3>
+      <hr/>
+      <p>Price: <b style="color:red">{{currentProduct.price}}</b></p>
+      Color: 
+      <p *ngFor="let pscolor of currentProduct.colorOptions; let i = index;"  [attr.data-index]="i">
+        <span class="colors"  *ngIf="defaultColor === i">{{pscolor}}</span>
+      </p>
+     
+      <div>  
+        <span (click)="setColorIndex(i)" class="color-buttons" *ngFor="let color of currentProduct.colorOptions; let i = index" [attr.data-index]="i">
+            <span [ngStyle]="{'background-color': color}"></span>
+            {{color}}
+        </span>
+      </div>
+        
+      <p class="ids">ID: {{currentProduct._id}}</p>
+      <button [disabled]="!currentProduct.isAvailable">Add To Cart</button>
+    </div>
+    
+  </div>
+ 
+</div>

@@ -1,0 +1,16 @@
+.product {
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 15px 0px;
+    padding: 10px;
+}
+
+.pcategory{
+    clear: both;
+    color: grey;
+    font-size: 18px;
+}
+
+.product img {
+    height: 100px;
+}

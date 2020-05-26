@@ -1,0 +1,15 @@
+<div>
+  <p class="pcategory">{{currentCategory}}</p>
+  <div class="container">
+    <div class="row"> 
+      <div *ngFor="let product of filterProductList | search:query" class="col-sm-12 col-md-6 col-lg-4">
+        <a routerLink='/detail/{{product.index}}'> 
+          <div class="product">
+              <div>{{product.name}}</div>
+              <img [src]="product.picture[0]">
+          </div>
+       </a>
+      </div>
+    </div>
+  </div>
+</div>

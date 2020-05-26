@@ -1,0 +1,43 @@
+.pcategory{
+    clear: both;
+    color: grey;
+    font-size: 18px;
+}
+.images img{
+    width: 100%;
+    height: auto;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+}
+.pcompany{
+    font-size: 17px;
+}
+.pname{
+    margin-top:-1%;
+}
+.colors{
+    float: left;
+    margin-right: 25%; 
+}
+.color-buttons {
+    border: 1px solid #ccc;
+    display: inline-block;
+    height: 40px;
+    min-width: 50px;
+    text-align: center;
+    margin: 5px;
+}
+.color-buttons span {
+    display: block;
+    height: 10px;
+    min-width: 50px;
+}
+.dropdown{
+   margin-top: -1%;
+}
